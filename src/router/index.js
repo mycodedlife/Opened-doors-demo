@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue';
 import RegisterView from '../views/RegisterView.vue';
 import LoginView from '../views/LoginView.vue';
 import PersonalView from '../views/PersonalView.vue';
+import ThanksView from '../views/ThanksView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,15 @@ const router = createRouter({
       component: PersonalView,
       meta: {
         title: "Personal",
+        auth: true,
+      }
+    },
+    {
+      path: '/thanks',
+      name: 'Thanks',
+      component: ThanksView,
+      meta: {
+        title: "Thanks",
         auth: true,
       }
     },

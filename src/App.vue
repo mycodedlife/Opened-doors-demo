@@ -42,7 +42,7 @@ export default {
       appReady.value = true;
     })
 
-    return {appReady};
+    return {appReady, currentDate, currentDateUnix};
   },
 };
 
